@@ -1,22 +1,53 @@
 import './style.css';
-import { renderHomePage } from './homePage';
+import { renderHeaderFooter } from './headerFooter';
+import { renderHomePage, generateHomeContainer } from './homePage';
+import { renderMenuPage } from './MenuPage';
+import { renderContactPage } from './ContactPage';
 
-function loadPage() {
-    const homeBtn = document.getElementById('home-btn');
-    const menuBtn = document.getElementById('menu-btn');
-    const contactBtn = document.getElementById('contact-btn');
+renderHeaderFooter()
+generateHomeContainer()
+listenForPageClick()
 
-    homeBtn.addEventListener('click', () => {
-        renderHomePage();
-    });
 
-    menuBtn.addEventListener('click', () => {
-        console.log('Menu button clicked');
-    });
-
-    contactBtn.addEventListener('click', () => {
-        console.log('Contact button clicked');
+function listenForPageClick(){
+    const ele = document.querySelectorAll('li')
+    ele.forEach(element => {
+        element.addEventListener('click', (e) => {
+            const pageId = e.target.id;
+            // console.log(pageId);
+            renderPage(pageId);
+        })
     });
 }
 
-loadPage()
+// TODO: Create a module for this function
+function renderPage(pageId){
+    // Clear the page content
+    removePrevPage();
+
+    // Generate the page content
+    switch(pageId) {
+
+        case 'home-btn':
+            renderHomePage();
+            break;
+
+        case 'menu-btn':
+            renderMenuPage();
+            break;
+
+        case 'contact-btn':
+            renderContactPage();
+            break;
+
+        default:
+            console.log('No page found');
+            break;
+    }
+}
+
+// TODO: Create a module for this function
+function removePrevPage() {
+    const pageContent = document.getElementById('pageContent');
+    pageContent.innerHTML = '';
+}
