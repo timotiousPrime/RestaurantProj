@@ -1,8 +1,8 @@
 import './style.css';
 import { renderHeaderFooter } from './headerFooter';
 import { renderHomePage, generateHomeContainer } from './homePage';
-import { renderMenuPage } from './MenuPage';
-import { renderContactPage } from './ContactPage';
+import { renderMenuPage } from './menuPage';
+import { renderContactPage } from './contactPage';
 
 renderHeaderFooter()
 generateHomeContainer()
