@@ -45,15 +45,80 @@ nav > ul {
 }
 
 nav > ul > li {
+    font-size: 1.6rem;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 8rem;
     height: 100%;
+    border: 1px dotted grey;
 }
 
+footer {
+    font-size: 1.2rem;
+}
 /* Page General Styling */
 
+#pageContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100vw;
+    border: 2px dotted red;
+
+}
+
 #home-container, #menu-container, #contact-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-size: 3rem;
+    height: inherit;
+    width: inherit;
+    border: 2px dotted orange;
+}
+
+#home-container {
+    justify-content: center;
+}
+
+#home-container {
+    background: url("https://source.unsplash.com/category/food");
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+
+/* Hero */
+#hero-card {
+    background-color: rgba(236, 230, 230, 0.09);
+    margin: 1.6rem;
+    width: 45vw;
+    height: 40%;
+    display: flex;
+    flex-wrap: no-wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+#hero-title {
+    padding: 0 .6rem;
+    text-align: center;
+    width: 100%;
+}
+
+#hero-text {
+    padding: 0 .6rem;
+    text-align: center;
+    font-size: 1.2rem;
+} 
+
+#hero-btn {
+    font-size: 1rem;
+    margin: .8rem;
+    width: 6rem;
+    height: 2.2rem;
 }
