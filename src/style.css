@@ -5,6 +5,7 @@
 }
 
 #content {
+    background: #333;
     color: red;
     width: 100vw;
     height: 100vh;
@@ -19,7 +20,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    color: blue;
+    color: cyan;
     width: 100vw;
     height: 15vh;
 }
@@ -51,7 +52,7 @@ nav > ul > li {
     height: 100%;
 }
 
-/* Menu Styling */
+/* Page General Styling */
 
 #home-container, #menu-container, #contact-container{
     font-size: 3rem;
