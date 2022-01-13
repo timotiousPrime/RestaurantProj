@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.test {
+#content {
     color: red;
     width: 100vw;
     height: 100vh;
@@ -21,7 +21,7 @@ header {
     justify-content: space-between;
     color: blue;
     width: 100vw;
-    height: 20vh;
+    height: 15vh;
 }
 
 .heading {
