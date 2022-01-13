@@ -50,3 +50,9 @@ nav > ul > li {
     width: 8rem;
     height: 100%;
 }
+
+/* Menu Styling */
+
+#home-container, #menu-container, #contact-container{
+    font-size: 3rem;
+}
