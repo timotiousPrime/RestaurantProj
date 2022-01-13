@@ -26,15 +26,15 @@ function generateHeroCard(){
 
     const heroTitle = document.createElement('h4');
     heroTitle.id = 'hero-title';
-    heroTitle.innerHTML = `this is the hero title`;
+    heroTitle.innerText = `this is the hero title`;
 
     const herotext = document.createElement('p');
     herotext.id = 'hero-text';
-    herotext.innerHTML = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos iure corporis sint quae recusandae repudiandae cum eius dolores.`;
+    herotext.innerText = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos iure corporis sint quae recusandae repudiandae cum eius dolores.`;
 
     const heroBtn = document.createElement('button');
     heroBtn.id = 'hero-btn';
-    heroBtn.innerHTML = `Magic`;
+    heroBtn.innerText = `Magic`;
 
     heroCard.appendChild(heroTitle);
     heroCard.appendChild(herotext);
