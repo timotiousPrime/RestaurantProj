@@ -1,9 +1,9 @@
-function component() {
-    const ele = document.createElement('div');
-    ele.innerHTML = 'Hello webpack';
+import './style.css';
 
-    return ele;
+// Testing styling is working
+function stylePage() {
+    const content = document.getElementById('content');
+    content.classList.add('test');
 }
 
-const contentDiv = document.getElementById('content');
-contentDiv.appendChild(component());
+stylePage()
