@@ -51,7 +51,7 @@ nav > ul > li {
     align-items: center;
     width: 8rem;
     height: 100%;
-    border: 1px dotted grey;
+    /* border: 1px dotted grey; */
 }
 
 footer {
@@ -65,7 +65,7 @@ footer {
     align-items: center;
     height: 100%;
     width: 100vw;
-    border: 2px dotted red;
+    /* border: 2px dotted red; */
 
 }
 
@@ -76,7 +76,7 @@ footer {
     font-size: 3rem;
     height: inherit;
     width: inherit;
-    border: 2px dotted orange;
+    /* border: 2px dotted orange; */
 }
 
 #home-container {
