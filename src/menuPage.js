@@ -1,3 +1,5 @@
+import './components/menu-components/menuStyles.css';
+
 export function renderMenuPage() {
     generateMenuContainer()
 }
@@ -119,7 +121,7 @@ function generateMenuCard(menuItem){
     
     const menuItemPrice = document.createElement('p');
     menuItemPrice.classList.add('menu-item-price');
-    menuItemPrice.innerText = `${menuItem.price}`;
+    menuItemPrice.innerText = `R${menuItem.price}/kg`;
 
     const menuItemImg = document.createElement('img');
     menuItemImg.classList.add('menu-item-img');
